@@ -24,7 +24,7 @@ class FlightSearch:
         self.fake_leg_date = "-".join(self.fake_leg_date)
         for airport in airport_codes:
             url = f"https://www.kayak.com/flights/{self.departure}-{self.destination}/{self.departure_date}/{self.destination}-" \
-                  f"{self.departure}/{self.return_date}/{self.departure}-{airport}/{self.fake_leg_date}/business?sort=bestflight_a"
+                  f"{self.departure}/{self.return_date}/{self.departure}-{airport}/{self.fake_leg_date}/business?sort=price_a"
             try:
                 if self.index%2==0:
                 # Open the webpage
